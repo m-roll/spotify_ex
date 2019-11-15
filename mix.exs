@@ -5,7 +5,7 @@ defmodule Spotify.Mixfile do
     [
       app: :spotify_ex,
       version: "2.0.9",
-      elixir: ">= 1.6.0",
+      elixir: ">= 1.9.2",
       description: description(),
       package: package(),
       build_embedded: Mix.env() == :prod,
@@ -55,7 +55,7 @@ defmodule Spotify.Mixfile do
       {:httpoison, "~> 1.0.0"},
       {:poison, "~> 3.1"},
       {:plug, ">= 1.4.5"},
-      {:mock, "~> 0.1.1", only: :test},
+      {:mock, "~> 0.3.0", only: :test},
       {:ex_doc, "~> 0.18.3", only: :dev},
       {:inch_ex, "~> 0.5.6", only: :docs}
     ]

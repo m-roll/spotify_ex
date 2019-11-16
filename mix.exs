@@ -4,7 +4,7 @@ defmodule Spotify.Mixfile do
   def project do
     [
       app: :spotify_ex,
-      version: "2.0.10",
+      version: "2.0.11",
       elixir: ">= 1.9.2",
       description: description(),
       package: package(),

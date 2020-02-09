@@ -10,6 +10,14 @@ defmodule Spotify.Player do
     conn |> Client.put(play_url(), body) |> handle_response()
   end
 
+  def play(conn, body, device_id) do
+    conn |> Client.put(play_url(device_id), body) |> handle_response()
+  end
+
+  def play_url(device_id) do
+    play_url() <> "?device_id=" <> device_id
+  end
+
   def play_url do
     "https://api.spotify.com/v1/me/player/play"
   end
